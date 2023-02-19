@@ -15,17 +15,117 @@ body {
 }
 
 .container{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 20px;
-}
-
-.items-container{
     width: 600px;
     height: 600px;
     background: #FFFFFF;
     box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
 }
+
+.items-container{
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px 0px;
+    display: flex;
+    /* flex-direction: column;
+    align-items: flex-start;
+    gap: 20px; */
+}
+
+.new-item-container{
+    border-top:  1px solid #EFEFEF;
+    padding: 20px 40px;
+    display:  flex;
+}
+
+.container > h1 {
+    font-family: 'Aleo', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #734671;
+}
+
+
+.item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 20px;
+    border-bottom: 1px solid #EFEFEF;
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.75);
+
+}
+
+.item-text{
+font-family: 'Aleo', serif;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+color: rgba(0, 0, 0, 0.75);
+}
+
+
+.new-item-input {
+    color: rgba(0, 0, 0, 0.5);
+    flex-grow: 1;
+    font: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    appearance: none;
+    border: none;
+    background: none;
+    /* padding: 20px 40px;
+    display: flex;
+    justify-content: stretch;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid #EFEFEF; */
+}
+
+.new-item-input >input {
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: 2px solid #9f9f9f;
+    border-radius: 2px;
+    appearance: none;
+    position: relative;
+    /* width: 100%;
+    font-family: 'Aleo', serif;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+appearance: none;
+border: none;
+background: none;
+color: rgba(0, 0, 0, 0.75); */
+}
+
+/* .items{
+
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px 0px;
+    width: 600px;
+    height: 536px;
+    overflow-y: auto;
+    flex-grow: 1;
+    
+    } */

@@ -5,14 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel=" stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,400;0,700;1,700&display=swap');
+        </style>
     <title>Pink Todo</title>
 </head>
 <body>
-    <div class="container">
+
+    <template id="item-template">
+
+        <label class="item">
+            <input type="checkbox" />
+            <span class="item-text">Todo soon</span>
+        </label>
+    </template>
+
+    <main>
         <h1>Pink Todo</h1>
-        <div class="items-container">
+    <div class="container">       
+        <div class="items-container"></div>             
             
+        <div class="new-item-container">
+                
+        <input class="new-item-input" type="text" placeholder="New todo item..."/>
+            
+
         </div>
     </div>
+</main>
+
+    <script src="script.js"></script>
 </body>
 </html>
