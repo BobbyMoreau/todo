@@ -16,6 +16,7 @@ newItemInput.addEventListener("keydown", (e) => {
         newItemInput.value ="";
     }
 });
+
  //Default todos becase you know you need it
 addItem("Do nothing");
 addItem("pet a cat");
